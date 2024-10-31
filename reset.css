@@ -1,5 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
+/* Reset CSS Modificado para o Catálogo de Filmes
    License: none (public domain)
 */
 
@@ -108,7 +107,10 @@ section {
 }
 
 body {
-    line-height: 1;
+    line-height: 1.5; /* Melhor legibilidade */
+    background-color: #FFB6C1; /* Cor de fundo rosa claro */
+    color: #000; /* Texto preto */
+    font-family: 'Poppins', sans-serif; /* Fonte fofa */
 }
 
 ol,
@@ -132,4 +134,19 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/* Adicionando estilos para imagens e links */
+img {
+    max-width: 100%; /* Imagens responsivas */
+    height: auto; /* Mantém proporção */
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado de links */
+    color: inherit; /* Mantém a cor do texto */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
