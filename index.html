@@ -94,61 +94,10 @@
   <section class="tópicos">
     <h2>Tópicos Visitados Recentemente</h2>
     <ul>
-      <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo de Filmes</title>
-  <style>
-    .imagem-filme {
-      display: none; /* Inicialmente, as imagens ficam ocultas */
-      margin-top: 10px;
-    }
-  </style>
-</head>
-<body>
-
-  <ul>
-    <li><a href="#" onclick="mostrarImagem('animação')">Animação</a></li>
-    <li><a href="#" onclick="mostrarImagem('aventura')">Aventura</a></li>
-    <li><a href="#" onclick="mostrarImagem('comédia')">Comédia</a></li>
-    <li><a href="#" onclick="mostrarImagem('fantasia')">Fantasia</a></li>
-  </ul>
-
-  <div id="animação" class="imagem-filme">
-    <img src="img/filme ToyStory.jpg" alt="Toy Story">
-  </div>
-
-  <div id="aventura" class="imagem-filme">
-    <img src="img/filme batman.jpg" alt="Batman">
-  </div>
-
-  <div id="comédia" class="imagem-filme">
-    <img src="img/filme divertidamente.jpg" alt="Divertidamente">
-  </div>
-
-  <div id="fantasia" class="imagem-filme">
-    <img src="img/encanto.jpg" alt="Encanto">
-  </div>
-
-  <script>
-    // Função para mostrar a imagem correspondente ao link clicado
-    function mostrarImagem(categoria) {
-      // Esconde todas as imagens
-      var imagens = document.querySelectorAll('.imagem-filme');
-      imagens.forEach(function(imagem) {
-        imagem.style.display = 'none';
-      });
-
-      // Mostra a imagem da categoria clicada
-      var imagemSelecionada = document.getElementById(categoria);
-      imagemSelecionada.style.display = 'block';
-    }
-  </script>
-
-</body>
-</html>
+     <li><a href="#">Animação</a></li>  <div class="swiper-slide"><img src="img/filme ToyStory" alt="Toy Story"></div>
+      <li><a href="#">Aventura</a></li>  <div class="swiper-slide"><img src="img/filme batman" alt="Batman"></div>
+      <li><a href="#">Comédia</a></li>   <div class="swiper-slide"><img src="img/filme divertidamente" alt="Divertidamente"></div>
+      <li><a href="#">Fantasia</a></li>  <div class="swiper-slide"><img src="img/encanto" alt="Encanto"></div>
 
 </ul>
 
