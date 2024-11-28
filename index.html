@@ -1,83 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Filmes da Bruninha</title>
+  <title>DrawBooks</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-color: #FFB6C1; /* Rosa claro */
-      color: #000; /* Preto */
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-    }
-
-    .banner {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .carrossel {
-      margin: 20px 0;
-    }
-
-    .card {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .tópicos, .contato {
-      margin: 20px 0;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px 0;
-    }
-  </style>
+<style>
+  body {
+    background-color: #FFB6C1;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
 </head>
 
 <body>
-  <header>
-    <h1>Catálogo de Filmes da Bruninha</h1>
-    <div>
-      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"></a>
-      <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras"></a>
-      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil"></a>
+  </div>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Desenhos Clássicos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Animações Modernas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Personagens Icônicos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Estúdios de Animação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Tradição e Inovação no Desenho</a>
+        </li>
+      </ul>
+      
+      <img src="img/CN.jpg" alt="Logo da DrawBooks" width="75" height="75" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
     </div>
   </header>
 
   <section class="banner">
-    <h2>Já sabe por onde começar?</h2>
-    <p>Encontre em nossa estante o que precisa para sua diversão!</p>
-    <input type="search" placeholder="Qual será seu próximo filme?">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
   </section>
 
-  <section class="carrossel">
+  <div class="container">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+</div>
+
+  <section class="carrossel_">
     <h2>Novos Lançamentos</h2>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="img/a vida é uma festa" alt="A Vida é uma Festa"></div>
-        <div class="swiper-slide"><img src="img/encanto" alt="Encanto"></div>
         <div class="swiper-slide"><img src="img/filme a incrível fábrica de chocolates.png" alt="A Incrível Fábrica de Chocolates"></div>
         <div class="swiper-slide"><img src="img/filme avstar" alt="Avatar"></div>
         <div class="swiper-slide"><img src="img/filme batman" alt="Batman"></div>
@@ -89,42 +83,110 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Para uma experiência animada ainda melhor, recomendamos...</h3>
+          <h2 class="descrição__titulo-livro">Netflix</h2>
+          <p class="descrição__texto">
+            Aproveite a imersão em uma vasta biblioteca de desenhos animados e filmes da Disney, Pixar e muito mais.
+          </p>
+          
+        </div>
+        <img src="img/Netflix-logo.png" alt="Netflix" class="descrição__imagem" style="width: 162px; height: 168px; object-fit: cover;" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="https://www.netflix.com/br/" class="botões__ancora" target="_blank">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/filme ToyStory" alt="Livro sobre apache aviação geral" width="302" height="423">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/filme batman" alt="Livro sobre como se tornar piloto" width="302" height="423">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/filme divertidamente" alt="Livro curiosidade de aviação" width="302" height="423">
+        </div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Desenhista do Mês</h3>
+          <h2 class="descrição__titulo-livro">Walt Disney</h2>
+          <p class="descrição__texto">Walt Disney foi um animador, cineasta e empresário, sendo o criador do icônico Mickey Mouse e o fundador da Disney, um dos maiores impérios de entretenimento de todos os tempos. Ele revolucionou o mundo dos desenhos animados e ajudou a transformar a animação em uma forma de arte globalmente reconhecida.
+          </p>
+        </div>        
+        <img src="img/Walt_Disney_1946.jpg" width="162" height="168" class="descrição__imagem">
+      </div>
+
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <a class="botões__ancora" target="_blank">Saiba mais</a>
+      </div>
+    </div>
   </section>
 
   <section class="tópicos">
-    <h2>Tópicos Visitados Recentemente</h2>
-    <ul>
-     <li><a href="#">Animação</a></li>  <div class="swiper-slide"><img src="img/filme ToyStory" alt="Toy Story"></div>
-      <li><a href="#">Aventura</a></li>  <div class="swiper-slide"><img src="img/filme batman" alt="Batman"></div>
-      <li><a href="#">Comédia</a></li>   <div class="swiper-slide"><img src="img/filme divertidamente" alt="Divertidamente"></div>
-      <li><a href="#">Fantasia</a></li>  <div class="swiper-slide"><img src="img/encanto" alt="Encanto"></div>
-
-</ul>
-
-<div id="animação" class="swiper-slide">
-  <img src="img/filme ToyStory" alt="Toy Story">
-</div>
-<div id="aventura" class="swiper-slide">
-  <img src="img/filme batman" alt="Batman">
-</div>
-<div id="comédia" class="swiper-slide">
-  <img src="img/filme divertidamente" alt="Divertidamente">
-</div>
-<div id="fantasia" class="swiper-slide">
-  <img src="img/encanto" alt="Encanto">
-</div>
-
+    <h2 class="tópicos__titulo">MAiS SOBRE DESENHOS</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item">
+        <a class="tópicos__link" target="_blank">Desenhos Clássicos</a>
+      </li>
+      <li class="tópicos__item">
+        <a class="tópicos__link" target="_blank">Cartoons Antigos</a>
+      </li>
+      <li class="tópicos__item">
+        <a class="tópicos__link" target="_blank">Estúdios de Animação</a>
+      </li>
+      <li class="tópicos__item">
+        <a class="tópicos__link" target="_blank">Desenhos Modernos</a>
+      </li>      
+      <li class="tópicos__item">
+        <a class="tópicos__link" target="_blank">ToyStory</a>
+      </li>
     </ul>
   </section>
 
   <section class="contato">
-    <h2>Fique por dentro das novidades!</h2>
-    <p>Atualizações de novos filmes, promoções e outros.</p>
-    <input type="email" placeholder="Cadastre seu e-mail">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
   </section>
 
-  <footer>
-    <h2>Catálogo da Bruninha</h2>
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Drawn</h2>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -132,9 +194,9 @@
     const swiper = new Swiper(".swiper", {
       spaceBetween: 10,
       slidesPerView: 3,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
       },
     });
   </script>
